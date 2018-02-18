@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/arena">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/onaltı_dp"
+                android:layout_marginTop="@dimen/onaltı_dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/TeamA"
+                android:textColor="@color/white"
+                android:textSize="@dimen/otuzdort_sp" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/yirmidort_dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/sıfır"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ellialtı_sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/yirmidort_dp"
+                android:layout_marginRight="@dimen/yirmidort_dp"
+                android:background="@color/goal_TeamA"
+                android:onClick="addGoalForTeamA"
+                android:text="@string/goal" />
+
+            <TextView
+                android:id="@+id/team_a_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/sıfır"
+                android:textColor="@color/black"
+                android:textSize="@dimen/kırk_sp" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/otuziki_dp"
+                android:layout_marginRight="@dimen/otuziki_dp"
+                android:background="@color/yellow_TeamA"
+                android:onClick="addYellowForTeamA"
+                android:text="@string/yellow" />
+
+            <TextView
+                android:id="@+id/team_a_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/sıfır"
+                android:textColor="@color/black"
+                android:textSize="@dimen/kırk_sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/red_TeamA"
+                android:onClick="addRedForTeamA"
+                android:text="@string/red" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/bir_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/seksenbes_dp"
+            android:layout_marginTop="@dimen/onaltı_dp"
+            android:background="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/onaltı_dp"
+                android:layout_marginTop="@dimen/onaltı_dp"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/TeamB"
+                android:textColor="@color/white"
+                android:textSize="@dimen/otuzdort_sp" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/yirmidort_dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/sıfır"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ellialtı_sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/yirmidort_dp"
+                android:layout_marginRight="@dimen/yirmidort_dp"
+                android:background="@color/goal_TeamB"
+                android:onClick="addGoalForTeamB"
+                android:text="@string/goal" />
+
+            <TextView
+                android:id="@+id/team_b_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/sıfır"
+                android:textColor="@color/black"
+                android:textSize="@dimen/kırk_sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/otuziki_dp"
+                android:layout_marginRight="@dimen/otuziki_dp"
+                android:background="@color/yellow_TeamB"
+                android:onClick="addYellowForTeamB"
+                android:text="@string/yellow" />
+
+            <TextView
+                android:id="@+id/team_b_red"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/dort_dp"
+                android:text="@string/sıfır"
+                android:textColor="@color/black"
+                android:textSize="@dimen/kırk_sp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/red_TeamB"
+                android:onClick="addRedForTeamB"
+                android:text="@string/red" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/otuziki_dp"
+        android:background="@color/reset_Button"
+        android:onClick="resetScore"
+        android:text="@string/reset" />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="onaltı_dp">16dp</dimen>
+    <dimen name="bir_dp">1dp</dimen>
+    <dimen name="seksenbes_dp">85dp</dimen>
+    <dimen name="sekiz_dp">8dp</dimen>
+    <dimen name="otuziki_dp">32dp</dimen>
+    <dimen name="yirmidort_dp">24dp</dimen>
+    <dimen name="dort_dp">4dp</dimen>
+    <dimen name="otuzdort_sp">34sp</dimen>
+    <dimen name="ellialtı_sp">56sp</dimen>
+    <dimen name="kırk_sp">40sp</dimen>
+
+
+</resources>
